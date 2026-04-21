@@ -1,0 +1,54 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import ArticleCard from '../../../components/ArticleCard.astro';
+import Sidebar from '../../../components/Sidebar.astro';
+
+export async function getStaticPaths() {
+  const allArticles = await getCollection('articles');
+  const categories = [...new Set(allArticles.map(a => a.data.category))];
+  return categories.map(category => ({
+    params: { category },
+    props: { category, articles: allArticles.filter(a => a.data.category === category) },
+  }));
+}
+
+const { category, articles } = Astro.props;
+const sorted = articles.sort((a: any, b: any) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+---
+
+<BaseLayout
+  title={`${category}の記事一覧`}
+  description={`50代男性向けマッチングアプリ情報：${category}に関する記事一覧です。`}
+>
+  <main class="site-main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="/">ホーム</a>
+        <span aria-hidden="true">›</span>
+        <a href="/articles">記事一覧</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">{category}</span>
+      </nav>
+
+      <div class="content-wrapper">
+        <div class="main-content">
+          <h1 class="section-title">カテゴリー：{category}（{sorted.length}件）</h1>
+          <div class="article-grid">
+            {sorted.map((article: any) => (
+              <ArticleCard
+                title={article.data.title}
+                description={article.data.description}
+                slug={article.slug}
+                category={article.data.category}
+                pubDate={article.data.pubDate}
+                thumbnail={article.data.thumbnail}
+              />
+            ))}
+          </div>
+        </div>
+        <Sidebar />
+      </div>
+    </div>
+  </main>
+</BaseLayout>

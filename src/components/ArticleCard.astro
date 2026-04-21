@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  slug: string;
+  category: string;
+  pubDate: Date;
+  thumbnail?: string;
+}
+
+const { title, description, slug, category, pubDate, thumbnail } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('ja-JP', {
+  year: 'numeric', month: 'long', day: 'numeric',
+});
+---
+
+<article class="article-card">
+  {thumbnail
+    ? <img class="card-thumbnail" src={thumbnail} alt={title} loading="lazy" width="400" height="180" />
+    : <div class="card-thumbnail-placeholder" aria-hidden="true">📱</div>
+  }
+  <div class="card-body">
+    <span class="card-category">{category}</span>
+    <h2 class="card-title">
+      <a href={`/articles/${slug}`}>{title}</a>
+    </h2>
+    <p class="card-excerpt">{description}</p>
+    <div class="card-meta">
+      <time datetime={pubDate.toISOString()}>🗓 {formattedDate}</time>
+    </div>
+  </div>
+</article>

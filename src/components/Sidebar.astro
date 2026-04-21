@@ -1,0 +1,69 @@
+---
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles');
+const recent = allArticles
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime())
+  .slice(0, 5);
+
+const categories = [...new Set(allArticles.map(a => a.data.category))].map(cat => ({
+  name: cat,
+  count: allArticles.filter(a => a.data.category === cat).length,
+}));
+---
+
+<aside class="sidebar">
+  <!-- おすすめアプリCTA -->
+  <div class="sidebar-widget sidebar-cta">
+    <div class="sidebar-cta-body">
+      <p>👇 50代に人気のマッチングアプリを今すぐチェック！無料登録で始められます</p>
+      <a href="/articles/ranking-50s">おすすめランキングを見る →</a>
+    </div>
+  </div>
+
+  <!-- 新着記事 -->
+  <div class="sidebar-widget">
+    <div class="widget-title">📰 新着記事</div>
+    <div class="widget-body">
+      <ul class="recent-list">
+        {recent.map(article => (
+          <li>
+            <a href={`/articles/${article.slug}`}>{article.data.title}</a>
+            <time class="recent-date" datetime={article.data.pubDate.toISOString()}>
+              {article.data.pubDate.toLocaleDateString('ja-JP', { year: 'numeric', month: 'short', day: 'numeric' })}
+            </time>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <!-- カテゴリー -->
+  <div class="sidebar-widget">
+    <div class="widget-title">📂 カテゴリー</div>
+    <div class="widget-body">
+      <ul class="category-list">
+        {categories.map(cat => (
+          <li>
+            <a href={`/articles/category/${cat.name}`}>
+              {cat.name}
+              <span class="count">{cat.count}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+
+  <!-- 人気タグ -->
+  <div class="sidebar-widget">
+    <div class="widget-title">🏷 人気タグ</div>
+    <div class="widget-body">
+      <div class="post-tags">
+        {['50代', '60代', 'ペアーズ', '婚活', '再婚', '初心者向け', 'シニア', '口コミ'].map(tag => (
+          <span class="post-tag">{tag}</span>
+        ))}
+      </div>
+    </div>
+  </div>
+</aside>

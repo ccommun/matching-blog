@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://matching50s.pages.dev/sitemap-index.xml

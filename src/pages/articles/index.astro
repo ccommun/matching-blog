@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import Sidebar from '../../components/Sidebar.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles');
+const sortedArticles = allArticles.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+
+const categories = [...new Set(allArticles.map(a => a.data.category))];
+---
+
+<BaseLayout
+  title="記事一覧"
+  description="50〜60代男性向けマッチングアプリに関する記事を一覧で掲載しています。アプリ比較・口コミ・使い方ガイドなど。"
+>
+  <main class="site-main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="/">ホーム</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">記事一覧</span>
+      </nav>
+
+      <div class="content-wrapper">
+        <div class="main-content">
+          <h1 class="section-title">記事一覧（全{sortedArticles.length}件）</h1>
+
+          <!-- カテゴリーフィルター -->
+          <div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom:24px;">
+            <a
+              href="/articles"
+              style="display:inline-block; background:var(--color-primary); color:white; padding:6px 16px; border-radius:20px; font-size:0.82rem; font-weight:600;"
+            >
+              すべて
+            </a>
+            {categories.map(cat => (
+              <a
+                href={`/articles/category/${cat}`}
+                style="display:inline-block; background:#f0f0f0; color:#555; padding:6px 16px; border-radius:20px; font-size:0.82rem; font-weight:600; transition:all 0.15s;"
+              >
+                {cat}
+              </a>
+            ))}
+          </div>
+
+          <div class="article-grid">
+            {sortedArticles.map(article => (
+              <ArticleCard
+                title={article.data.title}
+                description={article.data.description}
+                slug={article.slug}
+                category={article.data.category}
+                pubDate={article.data.pubDate}
+                thumbnail={article.data.thumbnail}
+              />
+            ))}
+          </div>
+        </div>
+
+        <Sidebar />
+      </div>
+    </div>
+  </main>
+</BaseLayout>

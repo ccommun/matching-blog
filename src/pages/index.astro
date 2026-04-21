@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { getCollection } from 'astro:content';
+
+const allArticles = await getCollection('articles');
+const sortedArticles = allArticles.sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
+);
+const featured = sortedArticles.find(a => a.data.featured);
+const recentArticles = sortedArticles.filter(a => !a.data.featured).slice(0, 6);
+
+const apps = [
+  {
+    rank: 1,
+    name: 'マリッシュ',
+    desc: '離婚・再婚希望者に特化。50代ユーザーが多く安心感が高い。プロフィール審査あり。',
+    tags: ['再婚向け', '審査あり', '50代多い'],
+    url: '#',
+  },
+  {
+    rank: 2,
+    name: 'ゼクシィ縁結び',
+    desc: 'リクルート運営の安心感。婚活・真剣交際希望の50代男性に人気。',
+    tags: ['婚活', '安心', '真剣交際'],
+    url: '#',
+  },
+  {
+    rank: 3,
+    name: 'ペアーズ',
+    desc: '国内最大級の会員数。趣味・価値観コミュニティで出会いやすい。',
+    tags: ['会員数最多', '趣味で繋がる', '初心者OK'],
+    url: '#',
+  },
+  {
+    rank: 4,
+    name: 'タップル',
+    desc: '趣味・興味でマッチング。カジュアルな出会いから真剣交際まで幅広く対応。',
+    tags: ['趣味マッチ', '使いやすい'],
+    url: '#',
+  },
+];
+---
+
+<BaseLayout
+  title="50代からのマッチング完全ガイド"
+  description="50〜60代の男性がマッチングアプリで安心して出会いを探せるよう、おすすめアプリの比較・口コミ・使い方を分かりやすく解説します。"
+>
+  <!-- ヒーローバナー -->
+  <section class="hero" aria-label="サイト紹介">
+    <div class="container">
+      <h1 class="hero-title">
+        <span>50〜60代男性</span>のための<br />
+        マッチングアプリ完全ガイド
+      </h1>
+      <p class="hero-desc">
+        「スマホは苦手…」「本当に出会えるの？」そんな不安を解消！<br />
+        実際の口コミと徹底比較で、あなたにぴったりのアプリが見つかります。
+      </p>
+      <a href="/articles" class="hero-cta">記事一覧を見る →</a>
+    </div>
+  </section>
+
+  <main class="site-main">
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="main-content">
+
+          <!-- おすすめランキング -->
+          <section aria-labelledby="ranking-title">
+            <h2 class="section-title" id="ranking-title">🏆 50代男性おすすめマッチングアプリ TOP4</h2>
+            <div class="app-ranking">
+              {apps.map(app => (
+                <div class="app-card">
+                  <div class={`rank-badge rank-${app.rank <= 3 ? app.rank : 'other'}`}>
+                    {app.rank <= 3 ? app.rank : app.rank + '位'}
+                  </div>
+                  <div class="app-info">
+                    <div class="app-name">{app.name}</div>
+                    <div class="app-desc">{app.desc}</div>
+                    <div class="app-tags">
+                      {app.tags.map(tag => <span class="app-tag">{tag}</span>)}
+                    </div>
+                  </div>
+                  <a href={app.url} class="app-cta-btn" rel="nofollow noopener" target="_blank">
+                    公式を見る
+                  </a>
+                </div>
+              ))}
+            </div>
+            <p style="text-align:right; margin-top: -12px; margin-bottom: 28px;">
+              <a href="/articles/ranking-50s" style="font-size:0.875rem;">詳しいランキングを見る →</a>
+            </p>
+          </section>
+
+          <!-- フィーチャード記事 -->
+          {featured && (
+            <section aria-labelledby="featured-title">
+              <h2 class="section-title" id="featured-title">📌 注目記事</h2>
+              <div class="featured-article">
+                <div class="featured-thumbnail" aria-hidden="true">📱</div>
+                <div class="featured-body">
+                  <span class="featured-label">注目</span>
+                  <h3 class="featured-title">
+                    <a href={`/articles/${featured.slug}`}>{featured.data.title}</a>
+                  </h3>
+                  <p class="featured-excerpt">{featured.data.description}</p>
+                  <a href={`/articles/${featured.slug}`} class="read-more">
+                    続きを読む →
+                  </a>
+                </div>
+              </div>
+            </section>
+          )}
+
+          <!-- 新着記事 -->
+          <section aria-labelledby="recent-title">
+            <h2 class="section-title" id="recent-title">🗞 新着記事</h2>
+            <div class="article-grid">
+              {recentArticles.map(article => (
+                <ArticleCard
+                  title={article.data.title}
+                  description={article.data.description}
+                  slug={article.slug}
+                  category={article.data.category}
+                  pubDate={article.data.pubDate}
+                  thumbnail={article.data.thumbnail}
+                />
+              ))}
+            </div>
+            <div style="text-align:center; margin-top: 28px;">
+              <a href="/articles" class="read-more">すべての記事を見る →</a>
+            </div>
+          </section>
+
+          <!-- サービス説明 -->
+          <section style="background:#fff; border-radius:6px; padding:28px; box-shadow:0 2px 8px rgba(0,0,0,0.08); border:1px solid #ddd; margin-top:32px;">
+            <h2 class="section-title">このサイトについて</h2>
+            <p style="font-size:0.9rem; line-height:1.8; color:#444;">
+              「50代マッチング完全ガイド」は、50〜60代の男性がマッチングアプリを安心して使えるよう、
+              各サービスの特徴・料金・口コミを分かりやすくまとめた情報サイトです。
+              「スマホが苦手」「マッチングアプリって怪しくない？」という方でも、
+              基本的な使い方から安全な利用方法まで丁寧に解説しています。
+            </p>
+          </section>
+
+        </div>
+        <Sidebar />
+      </div>
+    </div>
+  </main>
+</BaseLayout>
