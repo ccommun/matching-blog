@@ -5,7 +5,7 @@ pubDate: 2024-11-01
 updatedDate: 2024-12-15
 category: "アプリランキング"
 tags: ["50代", "ランキング", "比較", "おすすめ"]
-featured: true
+featured: false
 affiliate: true
 ---
 
