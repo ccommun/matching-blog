@@ -207,6 +207,12 @@ affiliate: true
     <img border="0" width="320" height="50" alt="" src="https://www24.a8.net/svt/bgt?aid=260429396973&wid=001&eno=01&mid=s00000016807008008000&mc=1" />
   </a>
   <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B1WLW+G3ASDU+3LOM+1BOE4H" alt="" />
+  <div style="margin-top: 40px;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+B72HBM+3N2M+6UHGH" rel="nofollow">
+      <img border="0" width="468" height="60" alt="" src="https://www28.a8.net/svt/bgt?aid=260428388677&wid=001&eno=01&mid=s00000016987001150000&mc=1" />
+    </a>
+    <img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4B1VTW+B72HBM+3N2M+6UHGH" alt="" />
+  </div>
 </div>
 
 ---
