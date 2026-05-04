@@ -161,6 +161,12 @@ affiliate: true
 
 ---
 
+<div style="text-align:center; margin: 24px 0;">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+B72HBM+3N2M+67C4I" rel="nofollow">結婚・恋愛マッチングサービス<br>
+いいね婚「マリッシュ」/R18</a>
+  <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B1VTW+B72HBM+3N2M+67C4I" alt="" />
+</div>
+
 ## まとめ
 
 既読スルーされない50代男性のメッセージ術をまとめます。
@@ -175,14 +181,6 @@ affiliate: true
 | 諦める目安 | 2回既読スルーで次へ。執着しないことが大切 |
 
 既読スルーは誰にでも起きることです。<strong>改善できる点を一つずつ直しながら続けることが、出会いへの最短ルートです。</strong>
-
----
-
-<div style="text-align:center; margin: 32px 0;">
-  <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+B72HBM+3N2M+67C4I" rel="nofollow">結婚・恋愛マッチングサービス<br>
-いいね婚「マリッシュ」/R18</a>
-  <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B1VTW+B72HBM+3N2M+67C4I" alt="" />
-</div>
 
 ---
 

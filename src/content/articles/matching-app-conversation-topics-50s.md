@@ -207,6 +207,12 @@ affiliate: true
 
 ---
 
+<div style="text-align:center; margin: 24px 0;">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+B72HBM+3N2M+67C4I" rel="nofollow">結婚・恋愛マッチングサービス<br>
+いいね婚「マリッシュ」/R18</a>
+  <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B1VTW+B72HBM+3N2M+67C4I" alt="" />
+</div>
+
 ## まとめ
 
 50代がマッチングアプリで使える会話ネタ10選をまとめます。
@@ -225,14 +231,6 @@ affiliate: true
 | 価値観・大切にしていること | やり取りが深まってきた段階で使う |
 
 会話ネタに詰まったら、この一覧を見返してみてください。<strong>大切なのは「質問するだけ」ではなく、自分のことも少し話しながら双方向の会話にすること</strong>です。それだけで、返信率もやり取りの温かさも大きく変わります。
-
----
-
-<div style="text-align:center; margin: 32px 0;">
-  <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+B72HBM+3N2M+67C4I" rel="nofollow">結婚・恋愛マッチングサービス<br>
-いいね婚「マリッシュ」/R18</a>
-  <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B1VTW+B72HBM+3N2M+67C4I" alt="" />
-</div>
 
 ---
 
