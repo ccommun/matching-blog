@@ -18,6 +18,13 @@ affiliate: true
 
 この記事では、<strong>50代が自然に使えて会話が盛り上がる話題を10個</strong>、例文と使い方のコツつきで紹介します。
 
+<div style="text-align:center; margin: 24px 0;">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+DK7GTU+1T5K+15T23M" rel="nofollow">優良コミュニティなので安心！<br>
+恋愛・婚活におすすめの華の会メール<br>
+→→【無料体験受付中】←←</a>
+  <img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4B1VTW+DK7GTU+1T5K+15T23M" alt="" />
+</div>
+
 ---
 
 ## 会話ネタ1：趣味・休日の過ごし方
@@ -222,16 +229,9 @@ affiliate: true
 ---
 
 <div style="text-align:center; margin: 32px 0;">
-  <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+DK7GTU+1T5K+16F4UP" rel="nofollow">
-    <img border="0" width="728" height="90" alt="" src="https://www29.a8.net/svt/bgt?aid=260428388820&wid=001&eno=01&mid=s00000008444007125000&mc=1" />
-  </a>
-  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B1VTW+DK7GTU+1T5K+16F4UP" alt="" />
-  <div style="margin-top: 40px;">
-    <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+B72HBM+3N2M+6N741" rel="nofollow">
-      <img border="0" width="120" height="60" alt="" src="https://www22.a8.net/svt/bgt?aid=260428388677&wid=001&eno=01&mid=s00000016987001116000&mc=1" />
-    </a>
-    <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B1VTW+B72HBM+3N2M+6N741" alt="" />
-  </div>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+B72HBM+3N2M+67C4I" rel="nofollow">結婚・恋愛マッチングサービス<br>
+いいね婚「マリッシュ」/R18</a>
+  <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4B1VTW+B72HBM+3N2M+67C4I" alt="" />
 </div>
 
 ---
