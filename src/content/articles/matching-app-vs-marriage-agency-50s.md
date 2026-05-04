@@ -195,6 +195,12 @@ affiliate: true
 
 ---
 
+<div style="text-align:center; margin: 24px 0;">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B1R5Q+C37VZM+1T5K+1ZG8B6" rel="nofollow">ハナメルで理想の出会いを見つけよう<br>
+【まずは無料体験！】</a>
+  <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4B1R5Q+C37VZM+1T5K+1ZG8B6" alt="" />
+</div>
+
 ## まとめ
 
 婚活アプリと結婚相談所の違いを改めて整理します。
