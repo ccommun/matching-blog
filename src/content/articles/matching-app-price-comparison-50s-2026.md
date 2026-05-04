@@ -116,6 +116,12 @@ affiliate: true
 
 真剣度が高い女性会員が多いOmiaiを加えることで、より真剣な出会いに絞ったアプローチが可能になります。
 
+<div style="text-align:center; margin: 24px 0;">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4B1VTW+B72HBM+3N2M+67C4I" rel="nofollow">結婚・恋愛マッチングサービス<br>
+いいね婚「マリッシュ」/R18</a>
+  <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B1VTW+B72HBM+3N2M+67C4I" alt="" />
+</div>
+
 ---
 
 ## 課金しすぎないための注意点
