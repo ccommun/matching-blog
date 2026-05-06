@@ -25,7 +25,6 @@ affiliate: true
 - Omiai（オミアイ）
 - マリッシュ
 - with（ウィズ）
-- ゼクシィ縁結び
 
 ---
 
