@@ -27,7 +27,7 @@ affiliate: true
 
 ---
 
-![スマートフォンを操作する男性](https://images.unsplash.com/photo-1556157382-97eda2d62296?w=800&auto=format&fit=crop&q=80)
+<img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400&auto=format&fit=crop&q=80" alt="スマートフォンを操作する男性" style="max-width:400px; width:100%; height:auto;" />
 
 ---
 
@@ -52,7 +52,7 @@ affiliate: true
 
 ---
 
-![カメラを前に穏やかに微笑む男性](https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop&q=80)
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80" alt="カメラを前に穏やかに微笑む男性" style="max-width:400px; width:100%; height:auto;" />
 
 ---
 
@@ -98,7 +98,7 @@ affiliate: true
 
 ---
 
-![スマートフォンのアプリ画面を見る男性](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop&q=80)
+<img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&auto=format&fit=crop&q=80" alt="スマートフォンのアプリ画面を見る男性" style="max-width:400px; width:100%; height:auto;" />
 
 ---
 
@@ -140,7 +140,7 @@ affiliate: true
 
 ---
 
-![カフェでテーブルを挟んで向かい合う二人](https://images.unsplash.com/photo-1521577352947-9bb58764b69a?w=800&auto=format&fit=crop&q=80)
+<img src="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?w=400&auto=format&fit=crop&q=80" alt="カフェでテーブルを挟んで向かい合う二人" style="max-width:400px; width:100%; height:auto;" />
 
 ---
 
@@ -170,7 +170,7 @@ affiliate: true
 
 勘違いを避けたうえで、では50代男性は何を武器にすればいいのでしょうか。
 
-![穏やかに微笑む大人の男性](https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=800&auto=format&fit=crop&q=80)
+<img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80" alt="穏やかに微笑む大人の男性" style="max-width:400px; width:100%; height:auto;" />
 
 ### 武器1：「落ち着き」と「安心感」
 
